@@ -8,7 +8,7 @@ module.exports = {
 
         args = args.map(arg => arg.replace(/\-/, ''));
 
-        let url = args[1] === 'f' ? `https://wttr.in/${args[0]}_Qu.png` : `https://wttr.in/${args[0]}_Q.png`;
+        let url = args[1] === 'f' ? `https://wttr.in/${args[0]}_Qu.png` : `https://wttr.in/${args[0]}_Qm.png`;
 
         message.channel.send(`The weather for ${args[0]}`, {files: [url]})
 
